@@ -1,5 +1,5 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+ import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react"; // Utilise le plugin installé
 import path from "path";
 
 // https://vitejs.dev/config/
@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    // Exemple : si tu veux ajouter un plugin uniquement en dev
+    // Si tu veux ajouter un plugin uniquement en dev
     // mode === "development" && monPlugin(),
   ].filter(Boolean),
   resolve: {
