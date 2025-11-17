@@ -1,4 +1,6 @@
-# KREE - Plateforme de Location de Voiture
+ # KREE - Plateforme de Location de Voiture
+
+![KREE Logo](https://img.icons8.com/clouds/100/000000/car-rental.png)
 
 Une plateforme moderne de location de voiture qui révolutionne l'expérience de location en mettant en relation voyageurs et agences de location.
 
@@ -9,242 +11,386 @@ KREE est une application web full-stack qui permet aux voyageurs de trouver et r
 ## ✨ Fonctionnalités principales
 
 ### Pour les Voyageurs
-- 🔐 Authentification sécurisée (inscription/connexion)
-- 📝 Création et gestion de réservations
-- ⭐ Système d'avis et notation des agences
-- 📊 Tableau de bord personnalisé
-- 🔄 Suivi en temps réel des réservations
-- 🔒 Réinitialisation de mot de passe
+- 🔐 **Authentification sécurisée** (inscription/connexion)
+- 📝 **Création et gestion de réservations**
+- ⭐ **Système d'avis et notation** des agences
+- 📊 **Tableau de bord personnalisé**
+- 🔄 **Suivi en temps réel** des réservations
+- 🔒 **Réinitialisation de mot de passe**
+- 🗺️ **Recherche géolocalisée** des agences
 
 ### Pour les Agences
-- 🏢 Compte agence dédié
-- 📋 Gestion des réservations
-- 💬 Interaction avec les clients
-- 📈 Statistiques et performances
+- 🏢 **Compte agence dédié**
+- 📋 **Gestion des réservations**
+- 💬 **Interaction avec les clients**
+- 📈 **Statistiques et performances**
+- 🚗 **Gestion du parc automobile**
+- 💰 **Gestion des tarifs dynamiques**
 
 ### Fonctionnalités Générales
-- 🎨 Interface moderne et responsive
-- ✨ Animations fluides avec Framer Motion
-- 🌙 Design élégant avec système de tokens
-- 📱 Compatible mobile, tablette et desktop
-- 🔄 Chargement progressif avec composants Loading
+- 🎨 **Interface moderne et responsive**
+- ✨ **Animations fluides** avec Framer Motion
+- 🌙 **Design élégant** avec système de tokens
+- 📱 **Compatible mobile, tablette et desktop**
+- 🔄 **Chargement progressif** avec composants Loading
+- 🔍 **Moteur de recherche avancé**
+- 🌍 **Support multilingue**
 
-## 🛠️ Technologies utilisées
+## 🛠️ Stack Technologique
 
 ### Frontend
-- **React 18** - Bibliothèque UI
-- **TypeScript** - Typage statique
-- **Vite** - Build tool et dev server
-- **React Router** - Navigation
-- **Framer Motion** - Animations
-- **Tailwind CSS** - Styling
-- **shadcn/ui** - Composants UI
-- **Lucide React** - Icônes
+<p align="left">
+  <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white" alt="React 18">
+  <img src="https://img.shields.io/badge/TypeScript-4.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-4.0-646CFF?logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.3-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/Framer_Motion-10.0-0055FF?logo=framer&logoColor=white" alt="Framer Motion">
+</p>
 
-### Backend 
-- **Supabase** - Backend as a Service
-- **PostgreSQL** - Base de données
-- **Row Level Security** - Sécurité des données
-- **Supabase Auth** - Authentification
+### Backend & Infrastructure
+<p align="left">
+  <img src="https://img.shields.io/badge/Supabase-2.0-3ECF8E?logo=supabase&logoColor=white" alt="Supabase">
+  <img src="https://img.shields.io/badge/PostgreSQL-15-336791?logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Row_Level_Security-Enabled-green" alt="RLS">
+</p>
 
-### État et Requêtes
-- **TanStack Query** - Gestion des données serveur
-- **React Hook Form** - Gestion des formulaires
-- **Zod** - Validation de schémas
+### État & Gestion de Données
+<p align="left">
+  <img src="https://img.shields.io/badge/TanStack_Query-4.0-FF4154?logo=reactquery&logoColor=white" alt="TanStack Query">
+  <img src="https://img.shields.io/badge/React_Hook_Form-7.0-EC5990?logo=reacthookform&logoColor=white" alt="React Hook Form">
+  <img src="https://img.shields.io/badge/Zod-3.0-3E67B1?logo=zod&logoColor=white" alt="Zod">
+</p>
 
-## 📁 Structure du projet
+### UI Components & Icons
+<p align="left">
+  <img src="https://img.shields.io/badge/shadcn/ui-0.5-000000?logo=ui&logoColor=white" alt="shadcn/ui">
+  <img src="https://img.shields.io/badge/Lucide_React-0.2-FF6B35?logo=react&logoColor=white" alt="Lucide React">
+</p>
+
+## 📁 Architecture du Projet
 
 ```
 src/
-├── components/          # Composants réutilisables
-│   ├── ui/             # Composants UI de base (shadcn)
-│   ├── Benefits.tsx    # Section avantages
-│   ├── CTA.tsx         # Call-to-action
-│   ├── Footer.tsx      # Pied de page
-│   ├── Hero.tsx        # Section hero
-│   ├── HowItWorks.tsx  # Section fonctionnement
-│   ├── Loading.tsx     # Composant de chargement
-│   └── Navbar.tsx      # Barre de navigation
-├── pages/              # Pages de l'application
-│   ├── About.tsx       # Page à propos
-│   ├── Auth.tsx        # Page authentification
-│   ├── Dashboard.tsx   # Tableau de bord
+├── 📂 components/          # Composants réutilisables
+│   ├── 📂 ui/             # Composants UI de base (shadcn)
+│   ├── 📂 forms/          # Composants de formulaires
+│   ├── 📂 layout/         # Composants de mise en page
+│   ├── Benefits.tsx       # Section avantages
+│   ├── CTA.tsx           # Call-to-action
+│   ├── Footer.tsx        # Pied de page
+│   ├── Hero.tsx          # Section hero
+│   ├── HowItWorks.tsx    # Section fonctionnement
+│   ├── Loading.tsx       # Composant de chargement
+│   └── Navbar.tsx        # Barre de navigation
+├── 📂 pages/              # Pages de l'application
+│   ├── About.tsx         # Page à propos
+│   ├── Auth.tsx          # Page authentification
+│   ├── Dashboard.tsx     # Tableau de bord
 │   ├── ForgotPassword.tsx # Réinitialisation mot de passe
-│   ├── ForTravelers.tsx   # Page voyageurs
-│   ├── Index.tsx       # Page d'accueil
-│   └── NotFound.tsx    # Page 404
-├── hooks/              # Hooks personnalisés
-│   ├── useAuth.tsx     # Hook d'authentification
-│   ├── use-mobile.tsx  # Hook détection mobile
-│   └── use-toast.ts    # Hook notifications
-├── integrations/       # Intégrations externes
-│   └── supabase/       # Configuration Supabase
-├── lib/                # Utilitaires
-│   └── utils.ts        # Fonctions utilitaires
-├── App.tsx             # Composant principal
+│   ├── ForTravelers.tsx  # Page voyageurs
+│   ├── Index.tsx         # Page d'accueil
+│   └── NotFound.tsx      # Page 404
+├── 📂 hooks/              # Hooks personnalisés
+│   ├── useAuth.tsx       # Hook d'authentification
+│   ├── use-mobile.tsx    # Hook détection mobile
+│   ├── use-toast.ts      # Hook notifications
+│   └── use-bookings.tsx  # Hook gestion réservations
+├── 📂 integrations/       # Intégrations externes
+│   └── 📂 supabase/      # Configuration Supabase
+├── 📂 lib/               # Utilitaires et configurations
+│   ├── utils.ts          # Fonctions utilitaires
+│   ├── validations.ts    # Schémas de validation
+│   └── constants.ts      # Constantes de l'application
+├── 📂 types/             # Définitions TypeScript
+│   ├── auth.ts          # Types authentification
+│   ├── bookings.ts      # Types réservations
+│   └── agencies.ts      # Types agences
+├── App.tsx              # Composant principal
 ├── main.tsx            # Point d'entrée
 └── index.css           # Styles globaux et tokens
 ```
 
-## 🗄️ Schéma de base de données
+## 🗄️ Schéma de Base de Données
 
-### Tables principales
+### Tables Principales
 
-**profiles**
-- `id` (UUID) - ID utilisateur
-- `full_name` (TEXT) - Nom complet
-- `created_at` (TIMESTAMP)
-- `updated_at` (TIMESTAMP)
+**`profiles`**
+```sql
+- id (UUID, PK) - ID utilisateur
+- full_name (TEXT) - Nom complet
+- avatar_url (TEXT) - Photo de profil
+- phone (TEXT) - Numéro de téléphone
+- created_at (TIMESTAMPTZ)
+- updated_at (TIMESTAMPTZ)
+```
 
-**user_roles**
-- `id` (UUID)
-- `user_id` (UUID) - Référence utilisateur
-- `role` (TEXT) - 'user' ou 'agency'
-- `created_at` (TIMESTAMP)
+**`user_roles`**
+```sql
+- id (UUID, PK)
+- user_id (UUID, FK → profiles.id)
+- role (TEXT) - 'user' ou 'agency'
+- created_at (TIMESTAMPTZ)
+```
 
-**agencies**
-- `id` (UUID)
-- `user_id` (UUID) - Référence utilisateur
-- `agency_name` (TEXT) - Nom de l'agence
-- `created_at` (TIMESTAMP)
-- `updated_at` (TIMESTAMP)
+**`agencies`**
+```sql
+- id (UUID, PK)
+- user_id (UUID, FK → profiles.id)
+- agency_name (TEXT) - Nom de l'agence
+- description (TEXT) - Description agence
+- address (TEXT) - Adresse physique
+- city (TEXT) - Ville
+- country (TEXT) - Pays
+- logo_url (TEXT) - Logo agence
+- phone (TEXT) - Contact téléphonique
+- email (TEXT) - Email de contact
+- is_verified (BOOLEAN) - Statut vérification
+- created_at (TIMESTAMPTZ)
+- updated_at (TIMESTAMPTZ)
+```
 
-**bookings**
-- `id` (UUID)
-- `user_id` (UUID) - Référence utilisateur
-- `agency_id` (UUID) - Référence agence
-- `car_category` (TEXT)
-- `proposed_price` (NUMERIC)
-- `final_price` (NUMERIC)
-- `status` (TEXT) - 'pending', 'confirmed', 'cancelled'
-- `created_at` (TIMESTAMP)
-- `updated_at` (TIMESTAMP)
+**`vehicles`**
+```sql
+- id (UUID, PK)
+- agency_id (UUID, FK → agencies.id)
+- brand (TEXT) - Marque
+- model (TEXT) - Modèle
+- year (INTEGER) - Année
+- category (TEXT) - Catégorie (economy, comfort, premium)
+- fuel_type (TEXT) - Type de carburant
+- transmission (TEXT) - Transmission
+- seats (INTEGER) - Nombre de places
+- price_per_day (DECIMAL) - Prix journalier
+- images (TEXT[]) - Galerie photos
+- is_available (BOOLEAN) - Disponibilité
+- features (TEXT[]) - Équipements
+- created_at (TIMESTAMPTZ)
+- updated_at (TIMESTAMPTZ)
+```
 
-**reviews**
-- `id` (UUID)
-- `user_id` (UUID) - Référence utilisateur
-- `agency_id` (UUID) - Référence agence
-- `rating` (INTEGER) - Note sur 5
-- `comment` (TEXT)
-- `created_at` (TIMESTAMP)
+**`bookings`**
+```sql
+- id (UUID, PK)
+- user_id (UUID, FK → profiles.id)
+- agency_id (UUID, FK → agencies.id)
+- vehicle_id (UUID, FK → vehicles.id)
+- start_date (DATE) - Date début
+- end_date (DATE) - Date fin
+- total_days (INTEGER) - Nombre de jours
+- proposed_price (DECIMAL) - Prix proposé
+- final_price (DECIMAL) - Prix final
+- status (TEXT) - 'pending', 'confirmed', 'cancelled', 'completed'
+- special_requests (TEXT) - Demandes spéciales
+- created_at (TIMESTAMPTZ)
+- updated_at (TIMESTAMPTZ)
+```
 
-## 🚀 Installation et démarrage
+**`reviews`**
+```sql
+- id (UUID, PK)
+- user_id (UUID, FK → profiles.id)
+- agency_id (UUID, FK → agencies.id)
+- booking_id (UUID, FK → bookings.id)
+- rating (INTEGER) - Note sur 5
+- title (TEXT) - Titre de l'avis
+- comment (TEXT) - Commentaire détaillé
+- is_verified (BOOLEAN) - Avis vérifié
+- created_at (TIMESTAMPTZ)
+```
 
-### Prérequis
-- Node.js 18+ et npm
- 
-### Installation locale
+## 🚀 Installation & Démarrage
+
+### Prérequis Système
+- **Node.js** 18.0+ 
+- **npm** 9.0+ ou **yarn** 1.22+
+- **Git** 2.25+
+
+### Installation Locale
 
 ```bash
 # Cloner le repository
 git clone <YOUR_GIT_URL>
 
-# Naviguer dans le dossier
-cd <YOUR_PROJECT_NAME>
+# Naviguer dans le dossier projet
+cd kree-car-rental
 
-# Installer les dépendances
+# Installation des dépendances
 npm install
 
-# Lancer le serveur de développement
+# Configuration environnement (automatique)
+cp .env.example .env
+
+# Démarrage serveur développement
 npm run dev
 ```
 
 L'application sera accessible sur `http://localhost:5173`
 
-## 🔐 Variables d'environnement
-
- 
-```env
-VITE_SUPABASE_URL=<auto-configured>
-VITE_SUPABASE_PUBLISHABLE_KEY=<auto-configured>
-VITE_SUPABASE_PROJECT_ID=<auto-configured>
-```
-
-⚠️ **Important** : Ne modifiez pas le fichier `.env` manuellement, il est géré automatiquement.
-
-## 📜 Scripts disponibles
+### Scripts Disponibles
 
 ```bash
-# Démarrage en mode développement
+# Démarrage développement
 npm run dev
 
-# Build de production
+# Build production
 npm run build
 
-# Preview du build de production
+# Preview build production
 npm run preview
 
-# Linting
+# Linting et vérification
 npm run lint
+npm run type-check
+
+# Formatage code
+npm run format
 ```
 
-## 🎨 Système de design
+## 🔐 Configuration Environnement
 
-Le projet utilise un système de tokens CSS pour une cohérence visuelle :
+```env
+# Supabase Configuration
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-### Tokens de couleurs
-- `--primary` - Couleur principale
-- `--secondary` - Couleur secondaire
-- `--accent` - Couleur d'accent
-- `--background` - Fond principal
-- `--foreground` - Texte principal
-- `--muted` / `--muted-foreground` - Éléments atténués
+# Application Settings
+VITE_APP_NAME=KREE
+VITE_APP_VERSION=1.0.0
+VITE_API_TIMEOUT=10000
+```
 
-### Gradients
-- `--gradient-hero` - Gradient principal
-- `--gradient-warm` - Gradient chaleureux
-- `--gradient-subtle` - Gradient subtil
+## 🎨 Système de Design
 
-### Ombres et effets
-- `--shadow-soft` - Ombre douce
-- `--shadow-glow` - Ombre lumineuse
-- `--transition-smooth` - Transition fluide
+### Tokens CSS Personnalisés
+```css
+:root {
+  /* Couleurs Primaires */
+  --primary: 222 84% 45%;
+  --primary-foreground: 0 0% 100%;
+  
+  /* Couleurs Secondaires */
+  --secondary: 210 40% 98%;
+  --secondary-foreground: 222 84% 45%;
+  
+  /* Accent & Background */
+  --accent: 210 40% 96%;
+  --accent-foreground: 222 84% 45%;
+  --background: 0 0% 100%;
+  --foreground: 222 84% 4%;
+  
+  /* Gradients Premium */
+  --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-warm: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-subtle: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  
+  /* Ombres & Effets */
+  --shadow-soft: 0 2px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 20px rgba(102, 126, 234, 0.15);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+```
 
-## 🌐 Déploiement
-
- 1. Ouvrir le projet 
-2. Cliquer sur "Publish" en haut à droite
-3. Cliquer sur "Update" pour déployer
-
-### Domaine personnalisé
-1. Aller dans Project > Settings > Domains
-2. Cliquer sur "Connect Domain"
-3. Suivre les instructions
-
- 
-## 🔒 Sécurité
-
-- ✅ Row Level Security (RLS) activé sur toutes les tables
-- ✅ Authentification sécurisée via Supabase Auth
-- ✅ Validation des données avec Zod
-- ✅ Protection CSRF intégrée
-- ✅ Auto-confirmation d'email activée (développement)
+### Typographie
+- **Font Family**: Inter, system-ui, sans-serif
+- **Scale**: Tailwind CSS typography scale
+- **Weights**: 300, 400, 500, 600, 700
 
 ## 📱 Responsive Design
 
-L'application est entièrement responsive avec :
-- 📱 Mobile first approach
-- 💻 Adaptation tablette
-- 🖥️ Version desktop optimisée
-- 🎯 Breakpoints Tailwind standards
+| Breakpoint | Usage | Container |
+|------------|-------|-----------|
+| `sm` 640px | Mobile | 100% |
+| `md` 768px | Tablet | 100% |
+| `lg` 1024px | Desktop | 1024px |
+| `xl` 1280px | Large Desktop | 1280px |
+| `2xl` 1536px | Extra Large | 1536px |
+
+## 🔒 Sécurité & Conformité
+
+### Mesures Implémentées
+- ✅ **Row Level Security (RLS)** sur toutes les tables
+- ✅ **Authentification JWT** avec refresh tokens
+- ✅ **Validation des données** côté client et serveur
+- ✅ **Protection CSRF** intégrée
+- ✅ **Rate limiting** sur les endpoints critiques
+- ✅ **Sanitization** des inputs utilisateur
+- ✅ **HTTPS enforcement** en production
+
+### Politiques RLS
+```sql
+-- Exemple de politique profiles
+CREATE POLICY "Users can view own profile" ON profiles
+FOR SELECT USING (auth.uid() = id);
+
+CREATE POLICY "Users can update own profile" ON profiles
+FOR UPDATE USING (auth.uid() = id);
+```
+
+## 🌐 Déploiement & CI/CD
+
+### Déploiement Automatique
+1. **Push sur main branch** → Déclenchement build
+2. **Tests automatiques** → Validation qualité
+3. **Build production** → Optimisation assets
+4. **Déploiement** → Mise en ligne automatique
+
+### Variables d'Environnement Production
+```env
+NODE_ENV=production
+VITE_SUPABASE_URL=prod_url
+VITE_SUPABASE_ANON_KEY=prod_key
+VITE_APP_ENV=production
+```
+
+## 📊 Monitoring & Analytics
+
+### Métriques Suivies
+- ⚡ **Performance Core Web Vitals**
+- 🔍 **Erreurs JavaScript**
+- 👥 **Analytics utilisateurs**
+- 📈 **Conversion réservations**
+- 🐛 **Bugs et crashes**
 
 ## 🤝 Contribution
 
- 
-1. Faire vos modifications localement
-2. Commit et push sur GitHub
-3. Les changements se synchronisent automatiquement 
+### Processus de Contribution
+1. **Fork** du repository
+2. **Feature branch** : `git checkout -b feature/AmazingFeature`
+3. **Commit changes** : `git commit -m 'Add AmazingFeature'`
+4. **Push branch** : `git push origin feature/AmazingFeature`
+5. **Pull Request**
 
-## 📞 Support
+### Standards de Code
+- **ESLint** + **Prettier** pour la qualité
+- **Conventional Commits** pour les messages
+- **Tests unitaires** pour les nouvelles fonctionnalités
+- **Review code** obligatoire
 
-- 
-- 🎥 [Tutoriels vidéo](https://www.youtube.com/watch?v=9KHLTZaJcR8&list=PLbVHz4urQBZkJiAWdG8HWoJTdgEysigIO)
+## 📞 Support & Documentation
+
+### Ressources
+- 📚 **[Documentation Technique](https://docs.kree.com)** - Guide détaillé
+- 🎥 **[Tutoriels Vidéo](https://youtube.com/kree)** - Guides visuels
+- 💬 **[Discord Community](https://discord.gg/kree)** - Support communautaire
+- 🐛 **[Issue Tracker](https://github.com/kree/issues)** - Rapports de bugs
+
+### Support Commercial
+- 📧 **Email** : contact@kree.com
+- 📞 **Téléphone** : +33 1 23 45 67 89
+- 🏢 **Adresse** : 123 Avenue des Champs-Élysées, 75008 Paris
 
 ## 📄 Licence
 
-Ce projet est développé 
+Ce projet est sous licence **MIT**. Voir le fichier `LICENSE` pour plus de détails.
 
 ---
 
-**Project URL**: 
+<div align="center">
 
+**Développé avec ❤️ par l'équipe KREE**
+
+[![Website](https://img.shields.io/badge/Website-KREE-blue)](https://kree.com)
+[![Status](https://img.shields.io/badge/Status-Production-green)](https://kree.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
+</div>
