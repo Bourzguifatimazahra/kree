@@ -1,7 +1,5 @@
  # KREE - Plateforme de Location de Voiture
-
-![KREE Logo](https://img.icons8.com/clouds/100/000000/car-rental.png)
-
+ 
 Une plateforme moderne de location de voiture qui révolutionne l'expérience de location en mettant en relation voyageurs et agences de location.
 
 ## 🚗 À propos du projet
@@ -209,10 +207,10 @@ src/
 
 ```bash
 # Cloner le repository
-git clone <YOUR_GIT_URL>
+git clone https://github.com/Bourzguifatimazahra/kree
 
 # Naviguer dans le dossier projet
-cd kree-car-rental
+cd kree 
 
 # Installation des dépendances
 npm install
@@ -224,7 +222,7 @@ cp .env.example .env
 npm run dev
 ```
 
-L'application sera accessible sur `http://localhost:5173`
+L'application sera accessible sur `[http://localhost:8080](http://localhost:8080/)`
 
 ### Scripts Disponibles
 
@@ -238,12 +236,6 @@ npm run build
 # Preview build production
 npm run preview
 
-# Linting et vérification
-npm run lint
-npm run type-check
-
-# Formatage code
-npm run format
 ```
 
 ## 🔐 Configuration Environnement
@@ -375,9 +367,7 @@ VITE_APP_ENV=production
 - 🐛 **[Issue Tracker](https://github.com/kree/issues)** - Rapports de bugs
 
 ### Support Commercial
-- 📧 **Email** : contact@kree.com
-- 📞 **Téléphone** : +33 1 23 45 67 89
-- 🏢 **Adresse** : 123 Avenue des Champs-Élysées, 75008 Paris
+- 📧 **Email** : bourzguifatimazahra@gmail.com
 
 ## 📄 Licence
 
@@ -387,7 +377,7 @@ Ce projet est sous licence **MIT**. Voir le fichier `LICENSE` pour plus de déta
 
 <div align="center">
 
-**Développé avec ❤️ par l'équipe KREE**
+**Développé avec ❤️ par l'équipe Bourzgui Fatima zahra**
 
 [![Website](https://img.shields.io/badge/Website-KREE-blue)](https://kree.com)
 [![Status](https://img.shields.io/badge/Status-Production-green)](https://kree.com)
