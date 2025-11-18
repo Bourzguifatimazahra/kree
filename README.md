@@ -379,8 +379,8 @@ Ce projet est sous licence **MIT**. Voir le fichier `LICENSE` pour plus de déta
 
 **Développé avec ❤️ par l'équipe Bourzgui Fatima zahra**
 
-[![Website](https://img.shields.io/badge/Website-KREE-blue)]([https://kree.com](https://kree01.netlify.app/))
-[![Status](https://img.shields.io/badge/Status-Production-green)]([https://kree.com](https://kree01.netlify.app/about))
+[![Website](https://img.shields.io/badge/Website-KREE-blue)](https://kree01.netlify.app/)
+[![Status](https://img.shields.io/badge/Status-Production-green)](https://kree01.netlify.app/about)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 </div>
